@@ -49,3 +49,5 @@ Thumbs.db
 # Embedded Mongo Downloads & Temp
 .mongo-binaries/
 **/scratch/
+
+.vercel
