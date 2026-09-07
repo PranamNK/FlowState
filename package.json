@@ -2,11 +2,23 @@
   "name": "flowstate-root",
   "version": "1.0.0",
   "description": "FLOWSTATE personal time-intelligence platform monorepo",
+  "type": "module",
   "scripts": {
+    "build": "npm run build --prefix client",
+    "build:client": "npm run build --prefix client",
     "client": "npm run dev --prefix client",
     "server": "npm run dev --prefix server",
-    "test:server": "npm run test --prefix server",
-    "build:client": "npm run build --prefix client"
+    "test:server": "npm run test --prefix server"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "groq-sdk": "^1.6.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5",
+    "socket.io": "^4.8.1"
   },
   "devDependencies": {
     "concurrently": "^9.1.2"
