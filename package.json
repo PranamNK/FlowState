@@ -1,0 +1,14 @@
+{
+  "name": "flowstate-root",
+  "version": "1.0.0",
+  "description": "FLOWSTATE personal time-intelligence platform monorepo",
+  "scripts": {
+    "client": "npm run dev --prefix client",
+    "server": "npm run dev --prefix server",
+    "test:server": "npm run test --prefix server",
+    "build:client": "npm run build --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
